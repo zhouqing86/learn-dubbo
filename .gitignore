@@ -26,3 +26,7 @@ dist/
 nbdist/
 .nb-gradle/
 target/
+
+dubbo-admin-war/*
+!dubbo-admin-war/favicon.ico
+dubbo-admin-2.5.5.war

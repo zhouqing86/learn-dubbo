@@ -37,6 +37,9 @@ subprojects {
       springBootVersion = '1.5.7.RELEASE'
       dubboVersion = '2.5.5'
       mysqlConnectorVersion = '5.1.44'
+      zookeeperVesion = '3.4.10'
+      zkclientVersion = '0.1'
+      curatorVersion = '4.0.0'
   	}
 
     // In this section you declare the dependencies for your production and test code
@@ -47,6 +50,8 @@ subprojects {
         compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
         compile("org.springframework.boot:spring-boot-starter-data-jpa:${springBootVersion}")
         compile("org.springframework.boot:spring-boot-starter-jdbc:${springBootVersion}")
+        compile("org.apache.zookeeper:zookeeper:${zookeeperVesion}")
+        compile("org.apache.curator:curator-framework:${curatorVersion}")
         compile("com.alibaba:dubbo:${dubboVersion}")
         runtime("mysql:mysql-connector-java:${mysqlConnectorVersion}")
         runtime('com.h2database:h2:1.4.196')
